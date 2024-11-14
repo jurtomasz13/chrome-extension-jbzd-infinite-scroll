@@ -1,7 +1,12 @@
-const path = require('path')
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+import { fileURLToPath } from 'url';
+import path from 'path'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
+  target: 'web',
   entry: {
     content: './src/content/content.js',
     background: './src/background/background.js',

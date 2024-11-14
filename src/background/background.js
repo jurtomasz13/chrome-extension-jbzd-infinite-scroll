@@ -1,1 +1,1 @@
-import './refreshExtension';
+import './refreshExtension.js';
