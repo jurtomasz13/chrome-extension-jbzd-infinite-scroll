@@ -2,6 +2,7 @@ import path from 'path'
 import { merge } from 'webpack-merge'
 import common from './webpack.common.js'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
+import ZipPlugin from 'zip-webpack-plugin'
 
 export default merge(common, {
   mode: 'production',
@@ -22,5 +23,10 @@ export default merge(common, {
         },
       ],
     }),
+    new ZipPlugin({
+      filename: 'extension.zip',
+      path: path.resolve(import.meta.dirname, 'dist'),
+      compression: 'DEFLATE'
+    })
   ],
 })
