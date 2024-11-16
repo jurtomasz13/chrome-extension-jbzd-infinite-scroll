@@ -1,7 +1,7 @@
 {
   "name": "JBZD - Infinite Scroll",
   "version": "1.0.0",
-  "description": "Transform your browsing experience on JBZD with seamless infinite scrolling. Enjoy uninterrupted content exploration without the need to click 'Next'—perfect for smooth, endless entertainment!",
+  "description": "Enhance your JBZD browsing with infinite scrolling—enjoy seamless, uninterrupted content without needing to click 'Next'!",
   "manifest_version": 3,
   "content_scripts": [
     {
@@ -12,6 +12,9 @@
       "js": ["content.bundle.js"]
     }
   ],
+  "icons": {
+    "src": "logo.png"
+  },
   "background": {
     "service_worker": "background.bundle.js",
     "type": "module"
