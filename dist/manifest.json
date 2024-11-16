@@ -1,13 +1,13 @@
 {
-  "name": "Infinite Scroll",
-  "version": "1.0",
-  "description": "A Chrome extension for infinite scrolling.",
+  "name": "JBZD Infinite Scroll",
+  "version": "1.0.0",
+  "description": "An extension for infinite scrolling on JBZD.",
   "manifest_version": 3,
   "content_scripts": [
     {
       "matches": [
-        "https://*/*",
-        "http://*/*"
+        "https://jbzd.com.pl/",
+        "https://jbzd.com.pl/*"
       ],
       "js": ["content.bundle.js"]
     }
