@@ -1,7 +1,7 @@
 {
-  "name": "JBZD Infinite Scroll",
+  "name": "JBZD - Infinite Scroll",
   "version": "1.0.0",
-  "description": "An extension for infinite scrolling on JBZD.",
+  "description": "Transform your browsing experience on JBZD with seamless infinite scrolling. Enjoy uninterrupted content exploration without the need to click 'Next'—perfect for smooth, endless entertainment!",
   "manifest_version": 3,
   "content_scripts": [
     {
@@ -16,7 +16,7 @@
     "service_worker": "background.bundle.js",
     "type": "module"
   },
-  "permissions": ["tabs", "notifications"],
+  "permissions": ["tabs"],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';",
     "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
